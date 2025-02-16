@@ -4,9 +4,8 @@ from pathlib import Path
 from agno.agent import Agent
 from agno.tools.duckduckgo import DuckDuckGoTools
 from agno.knowledge.text import TextKnowledgeBase
-from agno.models.openai import OpenAIChat
-from agno.embedder.openai import OpenAIEmbedder
 from agno.vectordb.lancedb import LanceDb, SearchType
+from config import get_model, get_embedder
 
 
 reza_knowledge_folder = (
@@ -22,15 +21,13 @@ reza_knowledge = TextKnowledgeBase(
         uri="vectordb",
         table_name="reza_thinking_process",
         search_type=SearchType.hybrid,
-        embedder=OpenAIEmbedder(),
-        # embedder=GeminiEmbedder(id="models/text-embedding-004"),
+        embedder=get_embedder(),
     ),
 )
 
 reza_thinking_agent = Agent(
-    # model=Gemini(id="gemini-2.0-flash-exp"),
     name="reza_thinking_agent",
-    model=OpenAIChat(id="gpt-4o"),
+    model=get_model(),
     description=dedent("""\
     You are Digital Dr. Reza, a virtual representation of the real Dr. Reza. You have access to Dr. Reza's knowledge and
     thinking process in a carefully curated knowledge base. You communicate in a professional, academic manner

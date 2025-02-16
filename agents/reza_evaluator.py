@@ -3,12 +3,13 @@ from typing import Optional
 
 from agno.eval.accuracy import AccuracyEval, AccuracyResult
 from reza import reza_agent
+from config import get_model
 
 
 def use_case_1():
     evaluation = AccuracyEval(
-        # model=OpenAIChat(id="gpt-4o"),
         agent=reza_agent,
+        model=get_model(),
         num_iterations=1,
         question=dedent("""\
         Doctor, I'm a 62-year-old male. For the past six months, I've had progressively worsening lower back pain that radiates down my left leg to my foot. It's a sharp, burning pain, and it's making it difficult to walk for more than a few minutes at a time. I've tried physical therapy and pain medication, but they only provide temporary relief. I also have noticed some weakness in my left foot; I sometimes trip and my foot seems to drop.\
