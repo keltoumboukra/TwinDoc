@@ -32,10 +32,9 @@ export const projectData: ProjectDataType = [
     name: "GI Bleed for Older Adult",
     tags: ['Gastroenterology', 'ER'],
     team: [
-      {id:'965', name: 'John M', initials: 'JM', image: 'https://api.dicebear.com/8.x/fun-emoji/svg?seed=Surfer'},
+      {id:'965', name: 'John M', initials: 'JM', image: 'https://wac-cdn.atlassian.com/dam/jcr:ba03a215-2f45-40f5-8540-b2015223c918/Max-R_Headshot%20(1).jpg?cdnVersion=1494'},
       {id:'865', name: 'John M', initials: 'FN', image: ''},
       {id:'144', name: 'John M', initials: 'SW', image: ''},
-      {id:'755', name: 'John M', initials: 'TD', image: ''},
     ],
     color: "#8BCEB6",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwBgmikc2JTlPK1cYYGeNGPNXMUBV5tanMAg&s"
@@ -43,9 +42,9 @@ export const projectData: ProjectDataType = [
   {
     id: "12345",
     name: "Bleeding Ulcer",
-    tags: ['Gastroenterology', 'Older Adult'],
+    tags: ['Gastroenterology', 'Primary Care'],
     team: [
-      {id:'453', name: 'John M', initials: 'JM', image: 'https://api.dicebear.com/8.x/fun-emoji/svg?seed=Mittens'},
+      // {id:'453', name: 'John M', initials: 'JM', image: 'https://api.dicebear.com/8.x/fun-emoji/svg?seed=Mittens'},
       {id:'454', name: 'Alan T.', initials: 'AT', image: ''},
       {id:'864', name: 'Tony D.', initials: 'TD', image: ''},
       {id:'964', name: 'John M', initials: 'JM', image: ''},

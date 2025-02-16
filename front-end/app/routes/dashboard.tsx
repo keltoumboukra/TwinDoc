@@ -1,6 +1,6 @@
 import { type LoaderFunctionArgs } from "@remix-run/node";
 import * as stylex from "@stylexjs/stylex";
-import { Heading, Text } from "@radix-ui/themes"
+import { Heading } from "@radix-ui/themes"
 import ProjectCard from "~/components/project-card";
 
 // Data
@@ -15,7 +15,8 @@ export const loader = async ({request}: LoaderFunctionArgs) => {
 export default function Dashboard() {
    return (
     <>
-      <Heading>Welcome back Dr. Andrews 👋</Heading>
+      <Heading>Welcome back Dr. Kumar 👋</Heading>
+      <br/>
       <div {...stylex.props(styles.projects)}>
         {projectData.map(project => {
           return <ProjectCard

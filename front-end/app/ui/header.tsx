@@ -26,9 +26,9 @@ const NotAuthenticatedNav = () => {
         <Link to="/login">Sign In</Link>
       </li>
       <li>
-        <Button radius="full">
+        {/* <Button radius="full"> */}
           <Link to="/register">Join for Free</Link>
-        </Button>
+        {/* </Button> */}
       </li>
     </ul>
   )
