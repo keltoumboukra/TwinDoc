@@ -1,0 +1,10 @@
+@stylex stylesheet;
+
+@layer reset {
+  body {
+    height: 100vh;
+    width: 100wh;
+    margin: 0;
+    padding: 0;
+  }
+}
