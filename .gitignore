@@ -1,4 +1,7 @@
 .envrc
 .venv
 .*cache
-tmp
+tmpagents/Miniconda3-latest-MacOSX-x86_64.sh
+agents/.gitignore
+agents/Miniconda3-latest-MacOSX-x86_64.sh
+agents/.gitignore
