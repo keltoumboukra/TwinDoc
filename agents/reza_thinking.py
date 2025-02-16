@@ -1,5 +1,7 @@
+import weave
 from textwrap import dedent
 from pathlib import Path
+from datetime import datetime
 
 from agno.agent import Agent
 from agno.tools.duckduckgo import DuckDuckGoTools
@@ -25,7 +27,12 @@ reza_knowledge = TextKnowledgeBase(
     ),
 )
 
-reza_thinking_agent = Agent(
+class ThinkingAgent(Agent):
+    @weave.op()
+    def print_response(self, prompt: str, **kwargs):
+        return super().print_response(prompt, **kwargs)
+
+reza_thinking_agent = ThinkingAgent(
     name="reza_thinking_agent",
     model=get_model(),
     description=dedent("""\

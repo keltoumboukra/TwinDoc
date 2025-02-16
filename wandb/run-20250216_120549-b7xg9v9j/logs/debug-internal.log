@@ -1,0 +1,16 @@
+{"time":"2025-02-16T12:05:50.080712-08:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/wandb/run-20250216_120549-b7xg9v9j/logs/debug-core.log"}
+{"time":"2025-02-16T12:05:50.096781-08:00","level":"INFO","msg":"created new stream","id":"b7xg9v9j"}
+{"time":"2025-02-16T12:05:50.096973-08:00","level":"INFO","msg":"stream: started","id":"b7xg9v9j"}
+{"time":"2025-02-16T12:05:50.09704-08:00","level":"INFO","msg":"handler: started","stream_id":"b7xg9v9j"}
+{"time":"2025-02-16T12:05:50.097625-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"b7xg9v9j"}
+{"time":"2025-02-16T12:05:50.097756-08:00","level":"INFO","msg":"sender: started","stream_id":"b7xg9v9j"}
+{"time":"2025-02-16T12:05:50.308507-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-16T12:06:59.17005-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-16T12:06:59.170521-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-16T12:06:59.670106-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-16T12:06:59.786526-08:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-02-16T12:07:00.800775-08:00","level":"INFO","msg":"stream: closing","id":"b7xg9v9j"}
+{"time":"2025-02-16T12:07:00.800849-08:00","level":"INFO","msg":"handler: closed","stream_id":"b7xg9v9j"}
+{"time":"2025-02-16T12:07:00.800892-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"b7xg9v9j"}
+{"time":"2025-02-16T12:07:00.800915-08:00","level":"INFO","msg":"sender: closed","stream_id":"b7xg9v9j"}
+{"time":"2025-02-16T12:07:00.801286-08:00","level":"INFO","msg":"stream: closed","id":"b7xg9v9j"}

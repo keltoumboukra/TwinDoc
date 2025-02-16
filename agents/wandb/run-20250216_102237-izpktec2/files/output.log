@@ -1,0 +1,12 @@
+[34mINFO    [0m Starting playground on [4;94mhttp://localhost:7777[0m
+[36m┏━[0m[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[36m Agent Playground [0m[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[36m━┓[0m
+[36m┃[0m                                                                             [36m┃[0m
+[36m┃[0m                                                                             [36m┃[0m
+[36m┃[0m  [1;32mPlayground URL:[0m ]8;id=902028;https://app.agno.com/playground?endpoint=localhost%3A7777\https://app.agno.com/playground?endpoint=localhost%3A7777]8;;\  [36m┃[0m
+[36m┃[0m                                                                             [36m┃[0m
+[36m┃[0m                                                                             [36m┃[0m
+[36m┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛[0m
+[32mINFO[0m:     Will watch for changes in these directories: ['/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents']
+[32mINFO[0m:     Uvicorn running on [1mhttp://localhost:7777[0m (Press CTRL+C to quit)
+[32mINFO[0m:     Started reloader process [[36m[1m69880[0m] using [36m[1mWatchFiles[0m
+[32mINFO[0m:     Stopping reloader process [[36m[1m69880[0m]

@@ -1,14 +1,19 @@
+import weave
 from textwrap import dedent
-
+from datetime import datetime
 from agno.agent import Agent
 from agno.storage.agent.sqlite import SqliteAgentStorage
 from reza_thinking import reza_thinking_agent
-from config import get_model
-
+from config import get_model, get_embedder
 
 agent_storage_file: str = "tmp/agents.db"
 
-reza_agent = Agent(
+class RezaAgent(Agent):
+    @weave.op()
+    def print_response(self, prompt: str, **kwargs):
+        return super().print_response(prompt, **kwargs)
+
+reza_agent = RezaAgent(
     name="reza_agent",
     model=get_model(),
     description=dedent("""\

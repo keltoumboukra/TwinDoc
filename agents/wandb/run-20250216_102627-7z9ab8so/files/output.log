@@ -1,0 +1,16 @@
+[32mINFO[0m:     Started server process [[36m70099[0m]
+[32mINFO[0m:     Waiting for application startup.
+[32mINFO[0m:     Application startup complete.
+[32mINFO[0m:     127.0.0.1:61467 - "[1mGET /v1/playground/agents HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:61447 - "[1mGET /v1/playground/status HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:61447 - "[1mOPTIONS /v1/playground/agents/065e487a-1092-4d71-a8c5-8e32229e76da/sessions?user_id=keltoum.boukra96_54e8 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:61467 - "[1mGET /v1/playground/agents/065e487a-1092-4d71-a8c5-8e32229e76da/sessions?user_id=keltoum.boukra96_54e8 HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     127.0.0.1:61452 - "[1mOPTIONS /v1/playground/agents/065e487a-1092-4d71-a8c5-8e32229e76da/runs HTTP/1.1[0m" [32m200 OK[0m
+[33mWARNING [0m Failed to deepcopy field: team - cannot pickle [32m'builtins.Connection'[0m object
+[32mINFO[0m:     127.0.0.1:61450 - "[1mPOST /v1/playground/agents/065e487a-1092-4d71-a8c5-8e32229e76da/runs HTTP/1.1[0m" [32m200 OK[0m
+[33mWARNING [0m Failed to deepcopy field: team - cannot pickle [32m'builtins.Connection'[0m object
+[32mINFO[0m:     127.0.0.1:61475 - "[1mPOST /v1/playground/agents/065e487a-1092-4d71-a8c5-8e32229e76da/runs HTTP/1.1[0m" [32m200 OK[0m
+[32mINFO[0m:     Shutting down
+[32mINFO[0m:     Waiting for application shutdown.
+[32mINFO[0m:     Application shutdown complete.
+[32mINFO[0m:     Finished server process [[36m70099[0m]

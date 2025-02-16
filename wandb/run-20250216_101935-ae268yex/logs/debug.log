@@ -1,0 +1,13 @@
+2025-02-16 10:19:35,985 INFO    MainThread:69751 [wandb_init.py:setup_run_log_directory():637] Logging user logs to /Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/wandb/run-20250216_101935-ae268yex/logs/debug.log
+2025-02-16 10:19:35,985 INFO    MainThread:69751 [wandb_init.py:setup_run_log_directory():638] Logging internal logs to /Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/wandb/run-20250216_101935-ae268yex/logs/debug-internal.log
+2025-02-16 10:19:35,985 INFO    MainThread:69751 [wandb_init.py:init():756] calling init triggers
+2025-02-16 10:19:35,985 INFO    MainThread:69751 [wandb_init.py:init():761] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-02-16 10:19:35,985 INFO    MainThread:69751 [wandb_init.py:init():781] wandb.init() called when a run is still active
+2025-02-16 10:20:39,430 INFO    MainThread:69751 [wandb_run.py:_finish():2110] finishing run keltoum-boukra96-myself/reza-agent/ya33d8f0
+2025-02-16 10:20:39,438 INFO    MainThread:69751 [wandb_run.py:_atexit_cleanup():2350] got exitcode: 0
+2025-02-16 10:20:39,438 INFO    MainThread:69751 [wandb_run.py:_restore():2332] restore
+2025-02-16 10:20:39,438 INFO    MainThread:69751 [wandb_run.py:_restore():2338] restore done
+2025-02-16 10:20:41,428 INFO    MainThread:69751 [wandb_run.py:_footer_history_summary_info():3963] rendering history
+2025-02-16 10:20:41,428 INFO    MainThread:69751 [wandb_run.py:_footer_history_summary_info():3995] rendering summary
+2025-02-16 10:20:41,429 INFO    MainThread:69751 [wandb_run.py:_footer_sync_info():3924] logging synced files
