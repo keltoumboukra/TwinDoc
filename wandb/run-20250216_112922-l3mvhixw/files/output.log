@@ -1,0 +1,298 @@
+Logged in as Weights & Biases user: keltoum-boukra96.
+View Weave data at https://wandb.ai/keltoum-boukra96-myself/reza-agent-testing/weave
+Starting Weave logging tests...
+Testing main Reza agent...
+[2K[1;31mERROR   [0m Error searching for documents: lance error: Invalid user input: query
+         [1;35mdim[0m[1m([0m[1;36m768[0m[1m)[0m doesn't match the column vector vector [1;35mdim[0m[1m([0m[1;36m1536[0m[1m)[0m,
+         [35m/Users/runner/miniforge3/conda-bld/lancedb_1739017207881/_build_env/.cargo/re[0m
+         [35mgistry/src/index.crates.io-6f17d22bba15001f/lance-0.22.0/src/dataset/[0m[95mscanner.[0m
+         [95mrs[0m:[1;92m717:25[0m
+[2K[36m┏━[0m[36m Message [0m[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[36m━┓[0m
+[36m┃[0m                                                                                    [36m┃[0m
+[36m┃[0m [32mWhat is your approach to diagnosing chest pain?[0m                                    [36m┃[0m
+[36m┃[0m                                                                                    [36m┃[0m
+[36m┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛[0m
+[34m┏━[0m[34m Response (20.7s) [0m[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[34m━┓[0m
+[34m┃[0m                                                                                    [34m┃[0m
+[34m┃[0m                                                                                    [34m┃[0m
+[34m┃[0m [1;33m • [0mRunning: transfer_task_to_reza_thinking_agent(expected_output=...,              [34m┃[0m
+[34m┃[0m [1;33m   [0mtask_description=Describe Dr. Reza's approach to diagnosing chest pain.)        [34m┃[0m
+[34m┃[0m                                                                                    [34m┃[0m
+[34m┃[0m My approach to diagnosing chest pain involves a systematic and thorough evaluation [34m┃[0m
+[34m┃[0m to identify the underlying cause, while always prioritizing the exclusion of       [34m┃[0m
+[34m┃[0m life-threatening conditions. Here's a detailed breakdown:                          [34m┃[0m
+[34m┃[0m                                                                                    [34m┃[0m
+[34m┃[0m [1mA. Initial Assessment:[0m                                                             [34m┃[0m
+[34m┃[0m                                                                                    [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mKey Findings:[0m I begin by gathering comprehensive information about the          [34m┃[0m
+[34m┃[0m [1;33m   [0mpatient's chest pain, including its precise location, nature (e.g., sharp,      [34m┃[0m
+[34m┃[0m [1;33m   [0mdull, squeezing), onset, duration, any associated symptoms (like shortness of   [34m┃[0m
+[34m┃[0m [1;33m   [0mbreath, sweating, nausea), and factors that alleviate or worsen the pain.       [34m┃[0m
+[34m┃[0m [1;33m   [0mSimultaneously, I assess vital signs, paying close attention to heart rate,     [34m┃[0m
+[34m┃[0m [1;33m   [0mblood pressure, respiratory rate, temperature, and oxygen saturation.           [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mCritical Concerns:[0m My immediate priority is to rule out critical,               [34m┃[0m
+[34m┃[0m [1;33m   [0mlife-threatening causes such as acute coronary syndrome (ACS), aortic           [34m┃[0m
+[34m┃[0m [1;33m   [0mdissection, pulmonary embolism, tension pneumothorax, and esophageal rupture.   [34m┃[0m
+[34m┃[0m                                                                                    [34m┃[0m
+[34m┃[0m [1mB. Thinking Process:[0m                                                               [34m┃[0m
+[34m┃[0m                                                                                    [34m┃[0m
+[34m┃[0m [1;33m 1 [0m[1mDifferential Diagnoses:[0m I consider a broad range of potential diagnoses:        [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mCardiac:[0m ACS (unstable angina, NSTEMI, STEMI), stable angina, pericarditis,  [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mmyocarditis.                                                                 [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mPulmonary:[0m Pulmonary embolism, pneumonia, pleurisy, pneumothorax,            [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0masthma/COPD exacerbation.                                                    [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mGastrointestinal:[0m Esophageal spasm, GERD, peptic ulcer disease, esophageal   [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mrupture.                                                                     [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mMusculoskeletal:[0m Costochondritis, muscle strain.                             [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mOther:[0m Anxiety/panic disorder, herpes zoster.                                [34m┃[0m
+[34m┃[0m [1;33m 2 [0m[1mLikelihood of Diagnoses:[0m I assess the likelihood of each diagnosis based on     [34m┃[0m
+[34m┃[0m [1;33m   [0mrisk factors and the characteristics of the chest pain:                         [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0mACS is a primary concern, particularly in patients with risk factors like    [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mhypertension, hyperlipidemia, diabetes, smoking, or a family history of      [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mheart disease. Squeezing, substernal chest pain radiating to the left arm or [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mjaw, accompanied by shortness of breath, sweating, or nausea, significantly  [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mraises the suspicion for ACS.                                                [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0mPulmonary embolism is considered in patients with sudden chest pain and      [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mshortness of breath, especially those with risk factors such as recent       [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0msurgery, immobilization, cancer, or a history of deep vein thrombosis.       [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0mEsophageal rupture (Boerhaave's syndrome) is rare but critical to consider   [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0min patients with severe chest pain and vomiting, particularly after forceful [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mretching.                                                                    [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0mMusculoskeletal pain is typically localized and reproducible upon palpation. [34m┃[0m
+[34m┃[0m [1;33m 3 [0m[1mLogical Progression:[0m My diagnostic approach follows a step-by-step process:     [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m 1 [0m[1mHistory and Physical Exam:[0m A detailed history and physical examination are   [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mcrucial to narrow the differential diagnosis.                                [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m 2 [0m[1mECG:[0m An electrocardiogram (ECG) is essential to detect signs of ischemia or  [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0minfarction.                                                                  [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m 3 [0m[1mCardiac Markers:[0m Troponin levels are measured to evaluate myocardial damage. [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m 4 [0m[1mChest X-ray:[0m A chest X-ray can help identify pulmonary causes of chest pain, [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0msuch as pneumonia, pneumothorax, or signs suggestive of pulmonary embolism,  [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0malthough CT angiography is more sensitive for PE.                            [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m 5 [0m[1mFurther Investigations:[0m Depending on the clinical suspicion, additional      [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0minvestigations may include CT angiography (for PE or aortic dissection),     [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mechocardiography (to assess cardiac function), or endoscopy (to evaluate     [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mesophageal causes).                                                          [34m┃[0m
+[34m┃[0m                                                                                    [34m┃[0m
+[34m┃[0m [1mC. Final Assessment & Plan:[0m                                                        [34m┃[0m
+[34m┃[0m                                                                                    [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mPrimary Diagnosis:[0m The primary diagnosis is determined based on the initial     [34m┃[0m
+[34m┃[0m [1;33m   [0massessment and the results of subsequent investigations.                        [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mImmediate Management:[0m                                                           [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mACS:[0m Aspirin, oxygen, nitroglycerin, morphine (if required), and urgent      [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mcardiology consultation for possible percutaneous coronary intervention      [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0m(PCI).                                                                       [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mPulmonary Embolism:[0m Anticoagulation.                                         [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mTension Pneumothorax:[0m Immediate needle decompression followed by chest tube  [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0minsertion.                                                                   [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mEsophageal Rupture:[0m Surgical consultation and broad-spectrum antibiotics.    [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mMonitoring and Follow-up:[0m Continuous ECG monitoring, serial troponin            [34m┃[0m
+[34m┃[0m [1;33m   [0mmeasurements, and close observation are essential in patients with suspected    [34m┃[0m
+[34m┃[0m [1;33m   [0mACS. Further follow-up depends on the final diagnosis and treatment plan.       [34m┃[0m
+[34m┃[0m                                                                                    [34m┃[0m
+[34m┃[0m It is important to remember that this is a general approach and not a substitute   [34m┃[0m
+[34m┃[0m for professional medical advice. Always consult a qualified healthcare provider    [34m┃[0m
+[34m┃[0m for the diagnosis and treatment of chest pain.                                     [34m┃[0m
+[34m┃[0m                                                                                    [34m┃[0m
+[34m┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛[0m
+[?25h
+Testing thinking agent...
+[2K[36m┏━[0m[36m Message [0m[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[36m━┓[0m
+[36m┃[0m                                                                                                                                                [36m┃[0m
+[36m┃[0m [32mHow would you approach a case of acute shortness of breath?[0m                                                                                    [36m┃[0m
+[36m┃[0m                                                                                                                                                [36m┃[0m
+[36m┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛[0m
+[34m┏━[0m[34m Response (11.4s) [0m[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[34m━┓[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m Okay, I can help you with how I, as Dr. Reza, would approach a case of acute shortness of breath.                                              [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m [1;33m 1 [0m[1mBreakdown of the request:[0m                                                                                                                   [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mAcute:[0m Implies sudden onset, requiring immediate attention.                                                                              [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mShortness of Breath (Dyspnea):[0m Subjective experience of breathing discomfort; requires understanding of possible underlying causes.      [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mApproach:[0m Encompasses initial assessment, differential diagnosis, investigations, and management.                                        [34m┃[0m
+[34m┃[0m [1;33m 2 [0m[1mSearch and Information Gathering:[0m                                                                                                           [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0mI will use the knowledge base and web searches to gather information on the assessment, possible diagnoses, and management of acute      [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mshortness of breath.                                                                                                                     [34m┃[0m
+[34m┃[0m [1;33m 3 [0m[1mResponse Structure:[0m                                                                                                                         [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0mI will structure the response into Initial Assessment, Thinking Process, and Final Assessment & Plan.                                    [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m Here's my approach:                                                                                                                            [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m [1mA. Initial Assessment[0m                                                                                                                          [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mKey Findings:[0m Determine the severity and stability of the patient. Immediately assess:                                                      [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0mAirway patency                                                                                                                           [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0mBreathing effectiveness (rate, depth, effort)                                                                                            [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0mCirculation (pulse, blood pressure, perfusion)                                                                                           [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0mMental status                                                                                                                            [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mAbnormal Values:[0m Any deviation from normal in the above parameters is critical.                                                             [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mCritical Concerns:[0m Airway obstruction, respiratory failure, and circulatory collapse are the most immediate threats.                        [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m [1mB. Thinking Process[0m                                                                                                                            [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mDifferential Diagnoses:[0m Several conditions can cause acute shortness of breath. I consider these possibilities:                             [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mPulmonary Embolism (PE):[0m Risk factors, sudden onset, pleuritic chest pain, tachycardia, hypoxemia.                                       [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0m[1;33m • [0m[3mLikelihood:[0m Depends on risk factors (e.g., recent surgery, immobility, cancer, prior DVT/PE, oral contraceptive use).                 [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mPneumonia:[0m Fever, cough, sputum production, pleuritic chest pain.                                                                        [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0m[1;33m • [0m[3mLikelihood:[0m Increased with signs of infection and abnormal auscultation findings (e.g., rales, rhonchi).                              [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mAcute Heart Failure (AHF):[0m History of heart disease, edema, orthopnea, paroxysmal nocturnal dyspnea.                                     [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0m[1;33m • [0m[3mLikelihood:[0m Increased with known cardiac history, S3 gallop on auscultation, and signs of fluid overload.                             [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mAsthma/COPD Exacerbation:[0m History of asthma or COPD, wheezing, cough, chest tightness.                                                   [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0m[1;33m • [0m[3mLikelihood:[0m Increased with known respiratory disease and exposure to triggers.                                                        [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mPneumothorax:[0m Sudden onset, sharp chest pain, decreased breath sounds on one side.                                                       [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0m[1;33m • [0m[3mLikelihood:[0m Increased in tall, thin individuals, history of lung disease, or trauma.                                                  [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mAnaphylaxis:[0m Exposure to allergen, hives, angioedema, wheezing.                                                                          [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0m[1;33m • [0m[3mLikelihood:[0m Increased with known allergies and recent exposure to potential allergens.                                                [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[1mForeign Body Aspiration:[0m Sudden onset, especially in children or individuals with impaired swallowing.                                   [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0m[1;33m • [0m[3mLikelihood:[0m Consider if witnessed choking event.                                                                                      [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mWhy Each Diagnosis is Likely/Unlikely:[0m                                                                                                      [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0mEach diagnosis is weighed based on the patient's history, risk factors, and examination findings. For example, a young, healthy          [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mindividual with sudden pleuritic chest pain is more likely to have a pneumothorax than acute heart failure. Conversely, an elderly       [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mpatient with a history of heart failure presenting with orthopnea and edema is more likely to be in acute heart failure.                 [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mLogical Progression:[0m                                                                                                                        [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m 1 [0m[1mImmediate Stabilization:[0m Address any life-threatening issues (airway, breathing, circulation).                                           [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m 2 [0m[1mFocused History and Physical Exam:[0m Gather information to narrow the differential.                                                        [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m 3 [0m[1mInitial Investigations:[0m Order tests to help confirm or rule out potential diagnoses.                                                     [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mWeb Findings:[0m                                                                                                                               [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0mAccording to the American Thoracic Society, the evaluation of dyspnea should include a detailed history, physical examination, and       [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mappropriate diagnostic testing. ]8;id=504852;https://www.thoracic.org/\[4;34mhttps://www.thoracic.org/[0m]8;;\                                                                                [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0mThe GOLD guidelines emphasize the importance of assessing COPD exacerbations based on symptom severity and risk factors.                 [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0m]8;id=525670;https://goldcopd.org/\[4;34mhttps://goldcopd.org/[0m]8;;\                                                                                                                    [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m [1mC. Final Assessment & Plan[0m                                                                                                                     [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mPrimary Diagnosis:[0m The primary diagnosis is determined by synthesizing the initial assessment, history, physical examination, and           [34m┃[0m
+[34m┃[0m [1;33m   [0minvestigations. It might not be immediately clear, and a working diagnosis is often necessary.                                              [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mImmediate Management Steps:[0m                                                                                                                 [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m 1 [0m[1mOxygen Therapy:[0m Administer oxygen to maintain adequate saturation.                                                                       [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m 2 [0m[1mMonitoring:[0m Continuous monitoring of vital signs (ECG, pulse oximetry, blood pressure).                                                  [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m 3 [0m[1mSpecific Treatments:[0m                                                                                                                     [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0m[1;33m • [0m[3mPulmonary Embolism:[0m Anticoagulation.                                                                                                  [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0m[1;33m • [0m[3mPneumonia:[0m Antibiotics.                                                                                                               [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0m[1;33m • [0m[3mAcute Heart Failure:[0m Diuretics, vasodilators.                                                                                         [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0m[1;33m • [0m[3mAsthma/COPD Exacerbation:[0m Bronchodilators, corticosteroids.                                                                           [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0m[1;33m • [0m[3mPneumothorax:[0m Needle decompression or chest tube insertion.                                                                           [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0m[1;33m • [0m[3mAnaphylaxis:[0m Epinephrine, antihistamines, corticosteroids.                                                                            [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0m[1;33m • [0m[3mForeign Body Aspiration:[0m Heimlich maneuver or bronchoscopy.                                                                           [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m 4 [0m[1mFurther Investigations:[0m Based on the suspected diagnosis, order additional tests (e.g., chest X-ray, CT scan, ECG, blood tests).         [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mMonitoring and Follow-up:[0m The patient's response to treatment should be closely monitored. Further management will depend on the final      [34m┃[0m
+[34m┃[0m [1;33m   [0mdiagnosis and the patient's clinical course.                                                                                                [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mReference:[0m                                                                                                                                  [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0mAmerican Thoracic Society guidelines for dyspnea evaluation.                                                                             [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0mGOLD guidelines for COPD exacerbation management.                                                                                        [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛[0m
+[?25h
+Testing transcript agent...
+[2K[1;31mERROR   [0m Error searching for documents: lance error: Invalid user input: query [1;35mdim[0m[1m([0m[1;36m768[0m[1m)[0m doesn't match the column vector vector [1;35mdim[0m[1m([0m[1;36m1536[0m[1m)[0m,
+         [35m/Users/runner/miniforge3/conda-bld/lancedb_1739017207881/_build_env/.cargo/registry/src/index.crates.io-6f17d22bba15001f/lance-0.22.0/src[0m
+         [35m/dataset/[0m[95mscanner.rs[0m:[1;92m717:25[0m
+[2K[36m┏━[0m[36m Message [0m[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[36m━┓[0m
+[36m┃[0m                                                                                                                                                [36m┃[0m
+[36m┃[0m [32mWhat is Dr. Reza's view on the importance of vital signs?[0m                                                                                      [36m┃[0m
+[36m┃[0m                                                                                                                                                [36m┃[0m
+[36m┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛[0m
+[34m┏━[0m[34m Response (2.2s) [0m[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[34m━┓[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m [1;33m • [0mRunning: search_knowledge_base(query=Dr. Reza vital signs importance)                                                                       [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m I apologize, but I don't have specific information about that in Dr. Reza's knowledge base.                                                    [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛[0m
+[?25h🍩 https://wandb.ai/keltoum-boukra96-myself/reza-agent-testing/r/call/0195103c-a83b-7ac2-8305-1044089f4b5e
+
+Testing complex case scenario...
+[2K[32m▰▰▰▰▰▰▱[0m Thinking.....
+[?25h🍩 https://wandb.ai/keltoum-boukra96-myself/reza-agent-testing/r/call/0195103d-30e5-7e40-b74e-582922268b10
+Traceback (most recent call last):
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 37, in <module>
+    test_complex_case()
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 668, in wrapper
+    res, _ = _do_call(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 461, in _do_call
+    execute_result = _execute_op(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 340, in _execute_op
+    handle_exception(e)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 338, in _execute_op
+    res = func(*args, **kwargs)
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 27, in test_complex_case
+    reza_agent.print_response(case)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 668, in wrapper
+    res, _ = _do_call(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 461, in _do_call
+    execute_result = _execute_op(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 340, in _execute_op
+    handle_exception(e)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 338, in _execute_op
+    res = func(*args, **kwargs)
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/reza.py", line 14, in print_response
+    return super().print_response(prompt, **kwargs)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 3511, in print_response
+    run_response = self.run(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 870, in run
+    return next(resp)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 592, in _run
+    model_response = self.model.response(messages=run_messages.messages)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/base.py", line 179, in response
+    for function_call_response in self.run_function_calls(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/base.py", line 756, in run_function_calls
+    for item in fc.result:
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 2367, in _transfer_task_to_agent
+    member_agent_run_response: RunResponse = member_agent.run(member_agent_task, stream=False)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 870, in run
+    return next(resp)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 592, in _run
+    model_response = self.model.response(messages=run_messages.messages)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/base.py", line 163, in response
+    assistant_message, has_tool_calls = self._process_model_response(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/base.py", line 291, in _process_model_response
+    provider_response: ModelResponse = self.parse_provider_response(response)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/google/gemini.py", line 620, in parse_provider_response
+    if response_message.role is not None:
+AttributeError: 'NoneType' object has no attribute 'role'
+Traceback (most recent call last):
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 37, in <module>
+    test_complex_case()
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 668, in wrapper
+    res, _ = _do_call(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 461, in _do_call
+    execute_result = _execute_op(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 340, in _execute_op
+    handle_exception(e)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 338, in _execute_op
+    res = func(*args, **kwargs)
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 27, in test_complex_case
+    reza_agent.print_response(case)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 668, in wrapper
+    res, _ = _do_call(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 461, in _do_call
+    execute_result = _execute_op(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 340, in _execute_op
+    handle_exception(e)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 338, in _execute_op
+    res = func(*args, **kwargs)
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/reza.py", line 14, in print_response
+    return super().print_response(prompt, **kwargs)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 3511, in print_response
+    run_response = self.run(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 870, in run
+    return next(resp)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 592, in _run
+    model_response = self.model.response(messages=run_messages.messages)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/base.py", line 179, in response
+    for function_call_response in self.run_function_calls(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/base.py", line 756, in run_function_calls
+    for item in fc.result:
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 2367, in _transfer_task_to_agent
+    member_agent_run_response: RunResponse = member_agent.run(member_agent_task, stream=False)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 870, in run
+    return next(resp)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 592, in _run
+    model_response = self.model.response(messages=run_messages.messages)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/base.py", line 163, in response
+    assistant_message, has_tool_calls = self._process_model_response(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/base.py", line 291, in _process_model_response
+    provider_response: ModelResponse = self.parse_provider_response(response)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/google/gemini.py", line 620, in parse_provider_response
+    if response_message.role is not None:
+AttributeError: 'NoneType' object has no attribute 'role'

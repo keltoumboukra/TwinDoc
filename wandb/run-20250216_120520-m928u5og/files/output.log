@@ -1,0 +1,78 @@
+Logged in as Weights & Biases user: keltoum-boukra96.
+View Weave data at https://wandb.ai/keltoum-boukra96-myself/reza-agent-testing/weave
+Starting Weave logging tests...
+Testing main Reza agent...
+[2K[32m▰▰▰▱▱▱▱[0m Thinking.....
+[?25h🍩 https://wandb.ai/keltoum-boukra96-myself/reza-agent-testing/r/call/0195105d-95f2-74a0-9835-1e65475b3c46
+Traceback (most recent call last):
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 35, in <module>
+    test_all_agents()
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 668, in wrapper
+    res, _ = _do_call(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 461, in _do_call
+    execute_result = _execute_op(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 340, in _execute_op
+    handle_exception(e)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 338, in _execute_op
+    res = func(*args, **kwargs)
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 12, in test_all_agents
+    reza_agent.print_response("What is your approach to diagnosing chest pain?")
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 668, in wrapper
+    res, _ = _do_call(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 461, in _do_call
+    execute_result = _execute_op(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 340, in _execute_op
+    handle_exception(e)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 338, in _execute_op
+    res = func(*args, **kwargs)
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/reza.py", line 14, in print_response
+    return super().print_response(prompt, **kwargs)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 3511, in print_response
+    run_response = self.run(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 870, in run
+    return next(resp)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 592, in _run
+    model_response = self.model.response(messages=run_messages.messages)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/base.py", line 163, in response
+    assistant_message, has_tool_calls = self._process_model_response(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/base.py", line 291, in _process_model_response
+    provider_response: ModelResponse = self.parse_provider_response(response)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/google/gemini.py", line 620, in parse_provider_response
+    if response_message.role is not None:
+AttributeError: 'NoneType' object has no attribute 'role'
+Traceback (most recent call last):
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 35, in <module>
+    test_all_agents()
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 668, in wrapper
+    res, _ = _do_call(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 461, in _do_call
+    execute_result = _execute_op(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 340, in _execute_op
+    handle_exception(e)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 338, in _execute_op
+    res = func(*args, **kwargs)
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 12, in test_all_agents
+    reza_agent.print_response("What is your approach to diagnosing chest pain?")
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 668, in wrapper
+    res, _ = _do_call(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 461, in _do_call
+    execute_result = _execute_op(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 340, in _execute_op
+    handle_exception(e)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 338, in _execute_op
+    res = func(*args, **kwargs)
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/reza.py", line 14, in print_response
+    return super().print_response(prompt, **kwargs)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 3511, in print_response
+    run_response = self.run(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 870, in run
+    return next(resp)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 592, in _run
+    model_response = self.model.response(messages=run_messages.messages)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/base.py", line 163, in response
+    assistant_message, has_tool_calls = self._process_model_response(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/base.py", line 291, in _process_model_response
+    provider_response: ModelResponse = self.parse_provider_response(response)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/google/gemini.py", line 620, in parse_provider_response
+    if response_message.role is not None:
+AttributeError: 'NoneType' object has no attribute 'role'

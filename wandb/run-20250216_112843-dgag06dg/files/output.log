@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 33, in <module>
+    weave.init()
+TypeError: init() missing 1 required positional argument: 'project_name'
+Traceback (most recent call last):
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 33, in <module>
+    weave.init()
+TypeError: init() missing 1 required positional argument: 'project_name'

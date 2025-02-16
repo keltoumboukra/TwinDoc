@@ -5,12 +5,12 @@
   },
   "segments": [
     {
-      "segment_id": "b3ab5fb9-2fde-4c65-aae5-c1b01857c675",
+      "segment_id": "61217dfd-c6ae-403a-8081-9661a7500907",
       "max_doc": 1,
       "deletes": null
     },
     {
-      "segment_id": "bd150f49-583b-470e-a013-a9a845f63b0d",
+      "segment_id": "1883a4e1-4ca2-4378-b480-70e36ead93aa",
       "max_doc": 1,
       "deletes": null
     }
