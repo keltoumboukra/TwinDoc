@@ -1,45 +1,17 @@
+import weave
 from textwrap import dedent
 from datetime import datetime
 from agno.agent import Agent
 from agno.storage.agent.sqlite import SqliteAgentStorage
 from reza_thinking import reza_thinking_agent
 from config import get_model, get_embedder
-from weave_logger import logger
-
 
 agent_storage_file: str = "tmp/agents.db"
 
 class RezaAgent(Agent):
+    @weave.op()
     def print_response(self, prompt: str, **kwargs):
-        try:
-            response = super().print_response(prompt, **kwargs)
-            logger.log_interaction(
-                question=prompt,
-                response=response,
-                metadata={
-                    "model": self.model.id,
-                    "agent_name": self.name,
-                    "agent_type": "main",
-                    "storage": "sqlite",
-                    "team_agents": ["reza_thinking_agent"],
-                    "history_responses": self.num_history_responses,
-                    "status": "success"
-                }
-            )
-            return response
-        except Exception as e:
-            logger.log_interaction(
-                question=prompt,
-                response=str(e),
-                metadata={
-                    "model": self.model.id,
-                    "agent_name": self.name,
-                    "agent_type": "main",
-                    "status": "error",
-                    "error_type": type(e).__name__
-                }
-            )
-            raise e
+        return super().print_response(prompt, **kwargs)
 
 reza_agent = RezaAgent(
     name="reza_agent",
