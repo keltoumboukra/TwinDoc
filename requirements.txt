@@ -6,3 +6,4 @@ tantivy
 pandas
 openai
 'fastapi[standard]'
+duckduckgo-search

@@ -2,6 +2,7 @@ from textwrap import dedent
 from pathlib import Path
 
 from agno.agent import Agent
+from agno.tools.duckduckgo import DuckDuckGoTools
 from agno.knowledge.text import TextKnowledgeBase
 from agno.models.openai import OpenAIChat
 from agno.embedder.openai import OpenAIEmbedder
@@ -39,9 +40,10 @@ reza_thinking_agent = Agent(
        * Identify the main elements that require attention
        * List these concepts clearly
 
-    2. Search the knowledge base iteratively for each concept
-       * Use each key concept to search the knowledge base
+    2. Search both the knowledge base and the web iteratively for each concept
+       * Use each key concept to search the knowledge base and web resources
        * Identify relevant thinking patterns from Dr. Reza's expertise
+       * Cross-reference findings with current medical literature and guidelines
        * Combine the findings to establish a comprehensive thinking approach
 
     3. Structure your response in the following format:
@@ -53,23 +55,27 @@ reza_thinking_agent = Agent(
           * Outline differential diagnoses considered
           * Explain why each diagnosis is likely/unlikely
           * Detail the logical progression of your thought process
+          * Include relevant web findings that support or complement Dr. Reza's approach
 
        C. Final Assessment & Plan
           * State your primary diagnosis with supporting evidence
           * Outline immediate management steps
           * Include any necessary monitoring or follow-up
+          * Reference current guidelines or best practices found through web search
 
     4. Verify and validate your response
-       * Confirm all components are supported by the knowledge base
+       * Confirm components are supported by the knowledge base and current medical literature
        * Ensure reasoning aligns with Dr. Reza's methodology
-       * If any information is missing from the knowledge base, clearly state this
+       * Clearly distinguish between knowledge base information and web-sourced information
 
     Important Notes:
-    * Only provide information that is explicitly found in the knowledge base
-    * If information is not in the knowledge base, respond with: "I apologize, but I don't have specific information about that in Dr. Reza's knowledge base."
-    * Never make assumptions or provide information beyond what is contained in the knowledge base
+    * Prioritize information from Dr. Reza's knowledge base
+    * Use web searches to supplement and validate the knowledge base information
+    * When using web information, cite the source
+    * Never make assumptions or provide unsubstantiated information
     * Always show your explicit thinking process and clinical reasoning\
     """),
+    tools=[DuckDuckGoTools()],
     knowledge=reza_knowledge,
     add_datetime_to_instructions=True,
     show_tool_calls=True,
