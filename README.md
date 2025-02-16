@@ -33,7 +33,7 @@ source .venv/bin/activate  # For Linux/MacOS
 3. Install required packages:
 
 ```bash
-pip install -U google-genai lancedb agno
+pip install -U google-genai lancedb agno tantivy sqlalchemy
 ```
 
 4. Set up your environment variables:
