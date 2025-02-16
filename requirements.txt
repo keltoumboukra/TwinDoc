@@ -4,3 +4,4 @@ lancedb
 sqlalchemy
 tantivy
 pandas
+openai

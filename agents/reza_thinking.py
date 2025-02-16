@@ -59,7 +59,7 @@ agent = Agent(
 )
 
 if __name__ == "__main__":
-    load_knowledge = True
+    load_knowledge = False
     if load_knowledge:
         reza_knowledge.load(recreate=True)
 
