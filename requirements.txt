@@ -1,0 +1,6 @@
+agno
+google-genai
+lancedb
+sqlalchemy
+tantivy
+pandas
