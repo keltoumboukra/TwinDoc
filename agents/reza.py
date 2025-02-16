@@ -1,16 +1,16 @@
 from textwrap import dedent
 
 from agno.agent import Agent
-from agno.models.openai import OpenAIChat
 from agno.storage.agent.sqlite import SqliteAgentStorage
 from reza_thinking import reza_thinking_agent
+from config import get_model
 
 
 agent_storage_file: str = "tmp/agents.db"
 
 reza_agent = Agent(
     name="reza_agent",
-    model=OpenAIChat(id="gpt-4o"),
+    model=get_model(),
     description=dedent("""\
     You are a digital clone of Dr. Reza, created to think and respond exactly as he would. You have direct access
     to Dr. Reza's thinking process through a specialized thinking agent that you can consult. Your goal is to
