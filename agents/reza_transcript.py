@@ -8,7 +8,9 @@ from agno.embedder.openai import OpenAIEmbedder
 from agno.vectordb.lancedb import LanceDb, SearchType
 
 
-reza_knowledge_folder = Path(__file__).parent.resolve().joinpath("knowledge").joinpath("reza")
+reza_knowledge_folder = (
+    Path(__file__).parent.parent.resolve().joinpath("knowledge").joinpath("reza")
+)
 
 reza_knowledge = TextKnowledgeBase(
     path=reza_knowledge_folder,
@@ -53,40 +55,40 @@ if __name__ == "__main__":
 
     agent.print_response(
         "What does Dr. Reza emphasize about the importance of problem representation in diagnosis?",
-        stream=True
+        stream=True,
     )
 
     agent.print_response(
         "How does Dr. Reza approach cases where there are multiple symptoms that could be either signal or noise?",
-        stream=True
+        stream=True,
     )
 
     agent.print_response(
         "What is Dr. Reza's perspective on the relationship between fever and cellulitis diagnosis?",
-        stream=True
+        stream=True,
     )
 
     agent.print_response(
         "According to the transcript, why is labetalol preferred over hydralazine when managing acute aortic syndromes?",
-        stream=True
+        stream=True,
     )
 
     agent.print_response(
         "What does Dr. Reza suggest about the importance of non-exertional vs exertional shortness of breath in diagnosis?",
-        stream=True
+        stream=True,
     )
 
     agent.print_response(
         "How does Dr. Reza approach the interpretation of review of systems in complex cases?",
-        stream=True
+        stream=True,
     )
 
     agent.print_response(
         "What is Dr. Reza's view on the value of negative findings in physical examinations?",
-        stream=True
+        stream=True,
     )
 
     agent.print_response(
         "According to the discussion, what factors should be considered when distinguishing between DVT and cellulitis?",
-        stream=True
+        stream=True,
     )

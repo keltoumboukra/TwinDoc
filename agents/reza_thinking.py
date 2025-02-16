@@ -8,7 +8,12 @@ from agno.embedder.openai import OpenAIEmbedder
 from agno.vectordb.lancedb import LanceDb, SearchType
 
 
-reza_knowledge_folder = Path(__file__).parent.parent.joinpath("knowledge").joinpath("reza").joinpath("thinking")
+reza_knowledge_folder = (
+    Path(__file__)
+    .parent.parent.joinpath("knowledge")
+    .joinpath("reza")
+    .joinpath("thinking")
+)
 
 reza_knowledge = TextKnowledgeBase(
     path=reza_knowledge_folder,
@@ -21,9 +26,10 @@ reza_knowledge = TextKnowledgeBase(
     ),
 )
 
-agent = Agent(
+reza_thinking_agent = Agent(
     # model=Gemini(id="gemini-2.0-flash-exp"),
-    model=OpenAIChat(id="gpt-4o-mini"),
+    name="reza_thinking_agent",
+    model=OpenAIChat(id="gpt-4o"),
     description=dedent("""\
     You are Digital Dr. Reza, a virtual representation of the real Dr. Reza. You have access to Dr. Reza's knowledge and
     thinking process in a carefully curated knowledge base. You communicate in a professional, academic manner
@@ -38,19 +44,31 @@ agent = Agent(
        * Identify relevant thinking patterns from Dr. Reza's expertise
        * Combine the findings to establish a comprehensive thinking approach
 
-    3. Develop a solution based on the identified thinking pattern
-       * Apply Dr. Reza's methodology to formulate a solution
-       * Ensure all solution components are supported by the knowledge base
+    3. Structure your response in the following format:
+       A. Initial Assessment
+          * List key findings and abnormal values
+          * Highlight critical concerns
 
-    4. Verify alignment
-       * Confirm the solution aligns with Dr. Reza's thinking approach
-       * Validate that all components are supported by knowledge base evidence
-       * If misaligned, revise using the established thinking pattern
+       B. Thinking Process
+          * Outline differential diagnoses considered
+          * Explain why each diagnosis is likely/unlikely
+          * Detail the logical progression of your thought process
+
+       C. Final Assessment & Plan
+          * State your primary diagnosis with supporting evidence
+          * Outline immediate management steps
+          * Include any necessary monitoring or follow-up
+
+    4. Verify and validate your response
+       * Confirm all components are supported by the knowledge base
+       * Ensure reasoning aligns with Dr. Reza's methodology
+       * If any information is missing from the knowledge base, clearly state this
 
     Important Notes:
     * Only provide information that is explicitly found in the knowledge base
     * If information is not in the knowledge base, respond with: "I apologize, but I don't have specific information about that in Dr. Reza's knowledge base."
-    * Never make assumptions or provide information beyond what is contained in the knowledge base\
+    * Never make assumptions or provide information beyond what is contained in the knowledge base
+    * Always show your explicit thinking process and clinical reasoning\
     """),
     knowledge=reza_knowledge,
     add_datetime_to_instructions=True,
@@ -63,10 +81,11 @@ if __name__ == "__main__":
     if load_knowledge:
         reza_knowledge.load(recreate=True)
 
-    agent.print_response(dedent("""\
+    reza_thinking_agent.print_response(
+        dedent("""\
         Diagnose this: 55 year old Male with Hematemesis with red clots (/large/small/no Hematochezia), for 1 day,
         with Syncope (No syncope). Patient denies prior history CAD, COPD, CRF risk for stress ulcer, cirrhosis. Patient is on aspirin, PPI. Rectal exam reveals Ongoing red blood (No melena/none/not done).
         BP is 80/40, HR 124, Hematocrit 32, with a baseline of 40, Platelets72, BUN42, Creatinine1.2, INR1.4. The last bowel movement was Red blood (Tarry Black/Brown stool) about 6 hrs ago.\
         """),
-        stream=True
+        stream=True,
     )
