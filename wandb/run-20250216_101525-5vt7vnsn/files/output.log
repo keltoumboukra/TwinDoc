@@ -1,0 +1,22 @@
+Starting Weave logging tests...
+Testing main Reza agent...
+Traceback (most recent call last):
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 75, in <module>
+    test_all_agents()
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 16, in test_all_agents
+    response = reza_agent.print_response("What is your approach to diagnosing chest pain?")
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/reza.py", line 94, in custom_print_response
+    raise e
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/reza.py", line 67, in custom_print_response
+    response = self.generate_response(prompt, **kwargs)
+AttributeError: 'Agent' object has no attribute 'generate_response'
+Traceback (most recent call last):
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 75, in <module>
+    test_all_agents()
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 16, in test_all_agents
+    response = reza_agent.print_response("What is your approach to diagnosing chest pain?")
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/reza.py", line 94, in custom_print_response
+    raise e
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/reza.py", line 67, in custom_print_response
+    response = self.generate_response(prompt, **kwargs)
+AttributeError: 'Agent' object has no attribute 'generate_response'

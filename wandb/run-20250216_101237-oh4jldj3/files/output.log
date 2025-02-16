@@ -1,0 +1,13 @@
+Starting Weave logging tests...
+Traceback (most recent call last):
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 55, in <module>
+    test_all_agents()
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 9, in test_all_agents
+    logger.log("Starting individual agent tests")
+AttributeError: 'WeaveLogger' object has no attribute 'log'
+Traceback (most recent call last):
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 55, in <module>
+    test_all_agents()
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 9, in test_all_agents
+    logger.log("Starting individual agent tests")
+AttributeError: 'WeaveLogger' object has no attribute 'log'

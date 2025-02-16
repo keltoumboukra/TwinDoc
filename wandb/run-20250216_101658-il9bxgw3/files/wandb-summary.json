@@ -1,0 +1,1 @@
+{"timestamp":"2025-02-16T10:17:00.575901","question":"What is your approach to diagnosing chest pain?","response":"'NoneType' object is not callable","metadata":{"error_type":"TypeError","model":"gemini-2.0-flash-exp","agent_name":"reza_agent","agent_type":"main","status":"error"},"_timestamp":1.739729820575994e+09,"_runtime":0.856251,"_step":1,"_wandb":{"runtime":0}}

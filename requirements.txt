@@ -7,3 +7,4 @@ pandas
 openai
 fastapi[standard]
 duckduckgo-search
+weave==0.51.33

@@ -5,6 +5,7 @@ from agno.agent import Agent
 from agno.knowledge.text import TextKnowledgeBase
 from agno.vectordb.lancedb import LanceDb, SearchType
 from config import get_model, get_embedder
+from weave_logger import logger
 
 
 reza_knowledge_folder = (
@@ -21,7 +22,22 @@ reza_knowledge = TextKnowledgeBase(
     ),
 )
 
-agent = Agent(
+class TranscriptAgent(Agent):
+    def print_response(self, prompt: str, **kwargs):
+        response = super().print_response(prompt, **kwargs)
+        logger.log_interaction(
+            question=prompt,
+            response=response,
+            metadata={
+                "model": self.model.id,
+                "agent_name": "transcript_agent",
+                "agent_type": "transcript",
+                "knowledge_base": "reza_knowledge"
+            }
+        )
+        return response
+
+agent = TranscriptAgent(
     model=get_model("mini"),
     description=dedent("""\
     You are Digital Dr. Reza, a virtual representation of the real Dr. Reza. You have access to Dr. Reza's knowledge,

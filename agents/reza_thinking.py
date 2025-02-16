@@ -1,11 +1,13 @@
 from textwrap import dedent
 from pathlib import Path
+from datetime import datetime
 
 from agno.agent import Agent
 from agno.tools.duckduckgo import DuckDuckGoTools
 from agno.knowledge.text import TextKnowledgeBase
 from agno.vectordb.lancedb import LanceDb, SearchType
 from config import get_model, get_embedder
+from weave_logger import logger
 
 
 reza_knowledge_folder = (
@@ -25,7 +27,23 @@ reza_knowledge = TextKnowledgeBase(
     ),
 )
 
-reza_thinking_agent = Agent(
+class ThinkingAgent(Agent):
+    def print_response(self, prompt: str, **kwargs):
+        response = super().print_response(prompt, **kwargs)
+        logger.log_interaction(
+            question=prompt,
+            response=response,
+            metadata={
+                "model": self.model.id,
+                "agent_name": "reza_thinking_agent",
+                "agent_type": "thinking",
+                "knowledge_base": "reza_thinking_process",
+                "tools": ["DuckDuckGoTools"]
+            }
+        )
+        return response
+
+reza_thinking_agent = ThinkingAgent(
     name="reza_thinking_agent",
     model=get_model(),
     description=dedent("""\

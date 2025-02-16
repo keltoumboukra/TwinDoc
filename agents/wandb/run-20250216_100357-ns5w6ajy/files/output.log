@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/reza_evaluator.py", line 89, in <module>
+    use_case_1()
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/reza_evaluator.py", line 85, in use_case_1
+    raise e
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/reza_evaluator.py", line 38, in use_case_1
+    result: Optional[AccuracyResult] = evaluation.run(print_results=True)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/eval/accuracy.py", line 395, in run
+    evaluator_agent: Agent = self.get_evaluator_agent(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/eval/accuracy.py", line 213, in get_evaluator_agent
+    model=OpenAIChat(id="gpt-4o-mini"),
+UnboundLocalError: local variable 'OpenAIChat' referenced before assignment
+Traceback (most recent call last):
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/reza_evaluator.py", line 89, in <module>
+    use_case_1()
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/reza_evaluator.py", line 85, in use_case_1
+    raise e
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/reza_evaluator.py", line 38, in use_case_1
+    result: Optional[AccuracyResult] = evaluation.run(print_results=True)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/eval/accuracy.py", line 395, in run
+    evaluator_agent: Agent = self.get_evaluator_agent(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/eval/accuracy.py", line 213, in get_evaluator_agent
+    model=OpenAIChat(id="gpt-4o-mini"),
+UnboundLocalError: local variable 'OpenAIChat' referenced before assignment

@@ -1,0 +1,35 @@
+{
+  "os": "macOS-10.16-x86_64-i386-64bit",
+  "python": "CPython 3.10.16",
+  "startedAt": "2025-02-16T18:01:39.558358Z",
+  "program": "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py",
+  "codePath": "agents/test_weave_logging.py",
+  "git": {
+    "remote": "https://github.com/keltoumboukra/TwinDoc",
+    "commit": "aaa743edf8c612f60f288eb06c7f56cb0e2a427d"
+  },
+  "email": "keltoum.boukra96@gmail.com",
+  "root": "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc",
+  "host": "Keltoums-MacBook-Air.local",
+  "executable": "/Users/keltoumboukra/miniconda3/envs/twindoc/bin/python",
+  "codePathLocal": "agents/test_weave_logging.py",
+  "cpu_count": 2,
+  "cpu_count_logical": 4,
+  "disk": {
+    "/": {
+      "total": "121123069952",
+      "used": "15324409856"
+    },
+    "/System/Volumes/Data": {
+      "total": "121123069952",
+      "used": "53183086592"
+    }
+  },
+  "memory": {
+    "total": "8589934592"
+  },
+  "cpu": {
+    "count": 2,
+    "countLogical": 4
+  }
+}

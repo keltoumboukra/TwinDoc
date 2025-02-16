@@ -1,0 +1,1 @@
+{"response":"local variable 'OpenAIChat' referenced before assignment","metadata":{"agent":"reza_agent","model":"gemini-2.0-flash-exp","status":"error","error_type":"UnboundLocalError","evaluation_type":"use_case_1"},"_timestamp":1.739729040375929e+09,"_runtime":1.549861,"_step":1,"_wandb":{"runtime":1},"timestamp":"2025-02-16T10:04:00.375808","question":"use_case_1"}

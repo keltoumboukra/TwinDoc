@@ -1,0 +1,15 @@
+{"time":"2025-02-16T10:11:55.657627-08:00","level":"INFO","msg":"stream: starting","core version":"0.19.6","symlink path":"/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/wandb/run-20250216_101154-wm8sekmd/logs/debug-core.log"}
+{"time":"2025-02-16T10:11:55.693373-08:00","level":"INFO","msg":"created new stream","id":"wm8sekmd"}
+{"time":"2025-02-16T10:11:55.693936-08:00","level":"INFO","msg":"stream: started","id":"wm8sekmd"}
+{"time":"2025-02-16T10:11:55.694348-08:00","level":"INFO","msg":"writer: Do: started","stream_id":"wm8sekmd"}
+{"time":"2025-02-16T10:11:55.695031-08:00","level":"INFO","msg":"handler: started","stream_id":"wm8sekmd"}
+{"time":"2025-02-16T10:11:55.695356-08:00","level":"INFO","msg":"sender: started","stream_id":"wm8sekmd"}
+{"time":"2025-02-16T10:11:55.910874-08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-16T10:11:56.42149-08:00","level":"INFO","msg":"stream: closing","id":"wm8sekmd"}
+{"time":"2025-02-16T10:11:56.421854-08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-16T10:11:56.42193-08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-16T10:11:56.906499-08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-16T10:11:57.019998-08:00","level":"INFO","msg":"handler: closed","stream_id":"wm8sekmd"}
+{"time":"2025-02-16T10:11:57.020077-08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"wm8sekmd"}
+{"time":"2025-02-16T10:11:57.020244-08:00","level":"INFO","msg":"sender: closed","stream_id":"wm8sekmd"}
+{"time":"2025-02-16T10:11:57.020802-08:00","level":"INFO","msg":"stream: closed","id":"wm8sekmd"}

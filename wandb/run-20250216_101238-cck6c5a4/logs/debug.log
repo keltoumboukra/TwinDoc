@@ -1,0 +1,7 @@
+2025-02-16 10:12:38,743 INFO    MainThread:68983 [wandb_init.py:setup_run_log_directory():637] Logging user logs to /Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/wandb/run-20250216_101238-cck6c5a4/logs/debug.log
+2025-02-16 10:12:38,744 INFO    MainThread:68983 [wandb_init.py:setup_run_log_directory():638] Logging internal logs to /Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/wandb/run-20250216_101238-cck6c5a4/logs/debug-internal.log
+2025-02-16 10:12:38,744 INFO    MainThread:68983 [wandb_init.py:init():756] calling init triggers
+2025-02-16 10:12:38,744 INFO    MainThread:68983 [wandb_init.py:init():761] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-02-16 10:12:38,744 INFO    MainThread:68983 [wandb_init.py:init():781] wandb.init() called when a run is still active
+2025-02-16 10:12:38,749 WARNING MsgRouterThr:68983 [router.py:message_loop():75] message_loop has been closed
