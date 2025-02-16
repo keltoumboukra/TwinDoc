@@ -1,0 +1,35 @@
+{
+  "os": "macOS-10.16-x86_64-i386-64bit",
+  "python": "CPython 3.10.16",
+  "startedAt": "2025-02-16T19:10:55.652700Z",
+  "program": "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/playground.py",
+  "codePath": "agents/playground.py",
+  "git": {
+    "remote": "https://github.com/keltoumboukra/TwinDoc",
+    "commit": "2305dda746a5135be0e6dc9613fd8b8381d1e30c"
+  },
+  "email": "keltoum.boukra96@gmail.com",
+  "root": "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc",
+  "host": "Keltoums-MacBook-Air.local",
+  "executable": "/Users/keltoumboukra/miniconda3/envs/twindoc/bin/python",
+  "codePathLocal": "agents/playground.py",
+  "cpu_count": 2,
+  "cpu_count_logical": 4,
+  "disk": {
+    "/": {
+      "total": "121123069952",
+      "used": "15324409856"
+    },
+    "/System/Volumes/Data": {
+      "total": "121123069952",
+      "used": "53503434752"
+    }
+  },
+  "memory": {
+    "total": "8589934592"
+  },
+  "cpu": {
+    "count": 2,
+    "countLogical": 4
+  }
+}
