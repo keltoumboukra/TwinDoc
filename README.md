@@ -136,7 +136,6 @@ Please make sure to update tests as appropriate and follow the existing coding s
 For support, please:
 - Open an issue on GitHub
 - Check the [documentation](https://docs.agno.com/how-to/install)
-- Join our [community discussions](https://github.com/keltoumboukra/TwinDoc/discussions)
 
 ## License
 
