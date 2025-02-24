@@ -2,8 +2,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Weights & Biases](https://img.shields.io/badge/Weights%20&%20Biases-enabled-blue)](https://wandb.ai/)
+[![Agno](https://img.shields.io/badge/Agno-powered-blue)](https://github.com/agno-ai/agno)
 
-A digital twin assistant that enables global collaboration between clinicians and streamlines medical documentation workflows.
+A digital twin assistant that enables global collaboration between clinicians and streamlines medical documentation workflows. Built with [Agno](https://github.com/agno-ai/agno), an open-source framework for building reliable AI agents.
 
 ## Description
 
@@ -20,12 +22,14 @@ TwinDoc is an innovative platform that creates digital twins for medical practit
 - AI-powered digital twin representation of clinical expertise
 - Integration with modern medical workflow systems
 - Multi-modal communication support
+- Automated logging and tracking of medical queries via Weights & Biases
 
 ## Prerequisites
 
 - Python 3.8 or higher
 - An OpenAI API key
 - Gemini API access (if applicable)
+- Weights & Biases account for logging
 
 ## Installation
 
@@ -48,28 +52,47 @@ source .venv/bin/activate  # For Linux/MacOS
 3. Install required packages:
 
 ```bash
-pip install -U google-genai lancedb agno tantivy sqlalchemy
+pip install -U google-genai lancedb agno tantivy sqlalchemy wandb weave
 ```
 
 4. Set up your environment variables:
 
 ```bash
-export GOOGLE_API_KEY=your-api-key-here    # For Linux/MacOS
-# or
-set GOOGLE_API_KEY=your-api-key-here       # For Windows
+# For Linux/MacOS
+export GOOGLE_API_KEY=your-api-key-here
+export WANDB_API_KEY=your-wandb-key-here
+
+# For Windows
+set GOOGLE_API_KEY=your-api-key-here
+set WANDB_API_KEY=your-wandb-key-here
 ```
 
 ## Usage
 
-1. Start the TwinDoc application:
+1. Import and use the medical query function:
 
-```bash
-python main.py
+```python
+from medical_query import query_medical_thinking
+
+# Ask a medical question
+response = query_medical_thinking(
+    question="What are the key differentials for acute chest pain?",
+    project_name="my-medical-project"  # Optional: defaults to "my-medical-project"
+)
+
+print(response)
 ```
 
-2. Access the web interface through your browser at `http://localhost:8000` (default port)
+2. Monitor your queries and responses in the Weights & Biases dashboard at `https://wandb.ai/your-username/my-medical-project`
 
-3. Follow the on-screen instructions to set up your digital twin profile
+## Logging and Monitoring
+
+TwinDoc uses Weights & Biases for comprehensive logging and monitoring:
+
+- All medical queries and responses are automatically logged
+- Track conversation history and agent performance
+- Monitor usage patterns and response times
+- Access detailed analytics through the W&B dashboard
 
 ## Documentation
 
@@ -88,6 +111,11 @@ Common issues and their solutions:
    - Make sure you have the correct Python version installed
    - Try upgrading pip: `pip install --upgrade pip`
    - Check system requirements are met
+
+3. Logging Issues
+   - Verify your W&B API key is correctly set
+   - Check W&B project permissions
+   - Ensure proper network connectivity to W&B servers
 
 ## Contributing
 
