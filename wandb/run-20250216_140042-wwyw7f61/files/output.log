@@ -1,0 +1,11 @@
+Logged in as Weights & Biases user: keltoum-boukra96.
+View Weave data at https://wandb.ai/keltoum-boukra96-myself/reza-agent-testing/weave
+Starting Weave logging tests...
+Traceback (most recent call last):
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 25, in <module>
+    test_all_agents()
+NameError: name 'test_all_agents' is not defined
+Traceback (most recent call last):
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 25, in <module>
+    test_all_agents()
+NameError: name 'test_all_agents' is not defined

@@ -1,0 +1,29 @@
+2025-02-23 16:04:27,519 INFO    MainThread:91037 [wandb_setup.py:_flush():68] Current SDK version is 0.19.6
+2025-02-23 16:04:27,519 INFO    MainThread:91037 [wandb_setup.py:_flush():68] Configure stats pid to 91037
+2025-02-23 16:04:27,519 INFO    MainThread:91037 [wandb_setup.py:_flush():68] Loading settings from /Users/keltoumboukra/.config/wandb/settings
+2025-02-23 16:04:27,519 INFO    MainThread:91037 [wandb_setup.py:_flush():68] Loading settings from /Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/wandb/settings
+2025-02-23 16:04:27,519 INFO    MainThread:91037 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-02-23 16:04:27,520 INFO    MainThread:91037 [wandb_init.py:setup_run_log_directory():637] Logging user logs to /Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/wandb/run-20250223_160427-8geo2up7/logs/debug.log
+2025-02-23 16:04:27,520 INFO    MainThread:91037 [wandb_init.py:setup_run_log_directory():638] Logging internal logs to /Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/wandb/run-20250223_160427-8geo2up7/logs/debug-internal.log
+2025-02-23 16:04:27,520 INFO    MainThread:91037 [wandb_init.py:init():756] calling init triggers
+2025-02-23 16:04:27,521 INFO    MainThread:91037 [wandb_init.py:init():761] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-02-23 16:04:27,521 INFO    MainThread:91037 [wandb_init.py:init():789] starting backend
+2025-02-23 16:04:28,176 INFO    MainThread:91037 [wandb_init.py:init():793] sending inform_init request
+2025-02-23 16:04:28,234 INFO    MainThread:91037 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2025-02-23 16:04:28,237 INFO    MainThread:91037 [wandb_init.py:init():808] backend started and connected
+2025-02-23 16:04:28,242 INFO    MainThread:91037 [wandb_init.py:init():901] updated telemetry
+2025-02-23 16:04:28,291 INFO    MainThread:91037 [wandb_init.py:init():936] communicating run to backend with 90.0 second timeout
+2025-02-23 16:04:28,444 INFO    MainThread:91037 [wandb_init.py:init():994] starting run threads in backend
+2025-02-23 16:04:28,780 INFO    MainThread:91037 [wandb_run.py:_console_start():2385] atexit reg
+2025-02-23 16:04:28,781 INFO    MainThread:91037 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2025-02-23 16:04:28,783 INFO    MainThread:91037 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2025-02-23 16:04:28,783 INFO    MainThread:91037 [wandb_run.py:_redirect():2325] Redirects installed.
+2025-02-23 16:04:28,787 INFO    MainThread:91037 [wandb_init.py:init():1036] run started, returning control to user process
+2025-02-23 16:05:07,585 INFO    MainThread:91037 [wandb_run.py:_finish():2110] finishing run keltoum-boukra96-myself/my-medical-project/8geo2up7
+2025-02-23 16:05:07,585 INFO    MainThread:91037 [wandb_run.py:_atexit_cleanup():2350] got exitcode: 0
+2025-02-23 16:05:07,586 INFO    MainThread:91037 [wandb_run.py:_restore():2332] restore
+2025-02-23 16:05:07,586 INFO    MainThread:91037 [wandb_run.py:_restore():2338] restore done
+2025-02-23 16:05:09,226 INFO    MainThread:91037 [wandb_run.py:_footer_history_summary_info():3963] rendering history
+2025-02-23 16:05:09,226 INFO    MainThread:91037 [wandb_run.py:_footer_history_summary_info():3995] rendering summary
+2025-02-23 16:05:09,227 INFO    MainThread:91037 [wandb_run.py:_footer_sync_info():3924] logging synced files

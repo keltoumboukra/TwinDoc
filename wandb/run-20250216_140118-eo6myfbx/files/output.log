@@ -1,0 +1,152 @@
+Logged in as Weights & Biases user: keltoum-boukra96.
+View Weave data at https://wandb.ai/keltoum-boukra96-myself/reza-agent-testing/weave
+Starting Weave logging tests...
+Testing main Reza agent...
+[2K[1;31mERROR   [0m Error searching for documents: lance error: Invalid user input: query [1;35mdim[0m[1m([0m[1;36m768[0m[1m)[0m doesn't match the column vector vector [1;35mdim[0m[1m([0m[1;36m1536[0m[1m)[0m,
+         [35m/Users/runner/miniforge3/conda-bld/lancedb_1739017207881/_build_env/.cargo/registry/src/index.crates.io-6f17d22bba15001f/lance-0.22.0/src[0m
+         [35m/dataset/[0m[95mscanner.rs[0m:[1;92m717:25[0m
+[2K[36m┏━[0m[36m Message [0m[36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[36m━┓[0m
+[36m┃[0m                                                                                                                                                [36m┃[0m
+[36m┃[0m [32mWhat is your approach to diagnosing chest pain?[0m                                                                                                [36m┃[0m
+[36m┃[0m                                                                                                                                                [36m┃[0m
+[36m┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛[0m
+[34m┏━[0m[34m Response (23.5s) [0m[34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[34m━┓[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m [1;33m • [0mRunning: transfer_task_to_reza_thinking_agent(task_description=..., expected_output=...)                                                    [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m Alright, here's how I, as Dr. Reza, would approach the diagnosis of chest pain:                                                                [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m [1mA. Initial Assessment[0m                                                                                                                          [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m The initial assessment of chest pain is critical. It involves a detailed evaluation to rapidly determine the potential cause and guide further [34m┃[0m
+[34m┃[0m management. Here's what I focus on:                                                                                                            [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mHistory[0m: I pay close attention to the characteristics of the chest pain, including its location, onset, duration, character (e.g., sharp,   [34m┃[0m
+[34m┃[0m [1;33m   [0mdull, pressure-like), radiation, intensity, and any aggravating or relieving factors. It's also crucial to get a thorough past medical      [34m┃[0m
+[34m┃[0m [1;33m   [0mhistory, including cardiovascular risk factors like hypertension, hyperlipidemia, diabetes, smoking, and family history, as well as current [34m┃[0m
+[34m┃[0m [1;33m   [0mmedications and allergies.                                                                                                                  [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mPhysical Examination[0m: A thorough physical exam is a must. This includes vital signs (heart rate, blood pressure, respiratory rate,          [34m┃[0m
+[34m┃[0m [1;33m   [0mtemperature, oxygen saturation), cardiac auscultation for murmurs or gallops, lung auscultation for any unusual sounds, and examination of  [34m┃[0m
+[34m┃[0m [1;33m   [0mthe extremities for edema or signs of peripheral artery disease.                                                                            [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mInitial investigations[0m: An ECG should be performed and interpreted within 10 minutes in patients with suspected acute coronary syndrome     [34m┃[0m
+[34m┃[0m [1;33m   [0m(ACS).                                                                                                                                      [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m [1mB. Thinking Process[0m                                                                                                                            [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m My approach to chest pain involves considering a broad range of potential diagnoses:                                                           [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mCardiac Etiologies[0m: Acute coronary syndrome (ACS), including unstable angina, NSTEMI, and STEMI, is the most critical diagnosis to rule out [34m┃[0m
+[34m┃[0m [1;33m   [0mdue to its high mortality. Other cardiac causes include pericarditis, myocarditis, and aortic dissection.                                   [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[3mACS Likelihood[0m: ACS is more likely if the pain is pressure-like, substernal, radiates to the arm or jaw, and is associated with          [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mdiaphoresis, nausea, or shortness of breath. ECG changes such as ST-segment elevation or depression, T-wave inversion, or a new left     [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mbundle branch block increase suspicion.                                                                                                  [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[3mACS Unlikely[0m: If the pain is pleuritic, sharp, positional, or reproducible on palpation, ACS is less likely, though it cannot be ruled   [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mout entirely.                                                                                                                            [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mPulmonary Etiologies[0m: I also consider pulmonary embolism (PE), pneumonia, pleuritis, and pneumothorax.                                      [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[3mPE Likelihood[0m: I consider PE in patients with sudden onset of dyspnea, pleuritic chest pain, tachypnea, tachycardia, and risk factors    [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mfor venous thromboembolism (e.g., recent surgery, immobilization, malignancy).                                                           [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mGastrointestinal Etiologies[0m: Esophageal spasm, GERD, peptic ulcer disease, and esophageal rupture are possibilities.                        [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[3mGI Likelihood[0m: If the pain is burning, located in the epigastric region, and associated with meals or relieved by antacids, a GI cause   [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mis more likely.                                                                                                                          [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mMusculoskeletal Etiologies[0m: Costochondritis and muscle strain are also in the differential.                                                 [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[3mMusculoskeletal Likelihood[0m: If the pain is localized, reproducible on palpation, and associated with recent trauma or exertion, a        [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mmusculoskeletal cause is more likely.                                                                                                    [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mOther Etiologies[0m: Anxiety/panic disorder and herpes zoster are other conditions to keep in mind.                                            [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m • [0m[3mAnxiety Likelihood[0m: If associated with other symptoms of anxiety such as palpitations, hyperventilation, and a history of anxiety        [34m┃[0m
+[34m┃[0m [1;33m   [0m[1;33m   [0mdisorders.                                                                                                                               [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m [1mRisk Stratification[0m: I use tools such as the HEART score or TIMI score to assess the risk of adverse cardiac events in patients with chest     [34m┃[0m
+[34m┃[0m pain. These scores incorporate factors such as history, ECG findings, age, risk factors, and troponin levels to categorize patients into low,  [34m┃[0m
+[34m┃[0m intermediate, or high-risk groups.                                                                                                             [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m [1mC. Final Assessment & Plan[0m                                                                                                                     [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m The final assessment involves synthesizing all available information to arrive at the most likely diagnosis and initiate appropriate           [34m┃[0m
+[34m┃[0m management.                                                                                                                                    [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mHigh-Risk ACS[0m: Immediate interventions such as oxygen, aspirin, nitroglycerin, and morphine (if needed) are necessary. Continuous cardiac   [34m┃[0m
+[34m┃[0m [1;33m   [0mmonitoring and serial ECGs and troponin measurements are also essential. I would consider emergent cardiac catheterization for STEMI or     [34m┃[0m
+[34m┃[0m [1;33m   [0mhigh-risk NSTEMI.                                                                                                                           [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mIntermediate-Risk ACS[0m: Further evaluation with stress testing or coronary CT angiography to assess for coronary artery disease is           [34m┃[0m
+[34m┃[0m [1;33m   [0mwarranted.                                                                                                                                  [34m┃[0m
+[34m┃[0m [1;33m • [0m[1mLow-Risk Chest Pain[0m: Further outpatient evaluation and management, focusing on the most likely etiology (e.g., musculoskeletal pain, GERD), [34m┃[0m
+[34m┃[0m [1;33m   [0mis appropriate.                                                                                                                             [34m┃[0m
+[34m┃[0m                                                                                                                                                [34m┃[0m
+[34m┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛[0m
+[?25h
+Testing thinking agent...
+[2K[32m▰▰▰▱▱▱▱[0m Thinking.....
+[?25h🍩 https://wandb.ai/keltoum-boukra96-myself/reza-agent-testing/r/call/019510c7-c0bc-7200-ab34-e0e9226e13da
+Traceback (most recent call last):
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 35, in <module>
+    test_all_agents()
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 668, in wrapper
+    res, _ = _do_call(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 461, in _do_call
+    execute_result = _execute_op(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 340, in _execute_op
+    handle_exception(e)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 338, in _execute_op
+    res = func(*args, **kwargs)
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 15, in test_all_agents
+    reza_thinking_agent.print_response("How would you approach a case of acute shortness of breath?")
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 668, in wrapper
+    res, _ = _do_call(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 461, in _do_call
+    execute_result = _execute_op(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 340, in _execute_op
+    handle_exception(e)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 338, in _execute_op
+    res = func(*args, **kwargs)
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/reza_thinking.py", line 33, in print_response
+    return super().print_response(prompt, **kwargs)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 3511, in print_response
+    run_response = self.run(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 870, in run
+    return next(resp)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 592, in _run
+    model_response = self.model.response(messages=run_messages.messages)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/base.py", line 163, in response
+    assistant_message, has_tool_calls = self._process_model_response(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/base.py", line 291, in _process_model_response
+    provider_response: ModelResponse = self.parse_provider_response(response)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/google/gemini.py", line 620, in parse_provider_response
+    if response_message.role is not None:
+AttributeError: 'NoneType' object has no attribute 'role'
+Traceback (most recent call last):
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 35, in <module>
+    test_all_agents()
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 668, in wrapper
+    res, _ = _do_call(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 461, in _do_call
+    execute_result = _execute_op(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 340, in _execute_op
+    handle_exception(e)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 338, in _execute_op
+    res = func(*args, **kwargs)
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/test_weave_logging.py", line 15, in test_all_agents
+    reza_thinking_agent.print_response("How would you approach a case of acute shortness of breath?")
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 668, in wrapper
+    res, _ = _do_call(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 461, in _do_call
+    execute_result = _execute_op(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 340, in _execute_op
+    handle_exception(e)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/weave/trace/op.py", line 338, in _execute_op
+    res = func(*args, **kwargs)
+  File "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/reza_thinking.py", line 33, in print_response
+    return super().print_response(prompt, **kwargs)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 3511, in print_response
+    run_response = self.run(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 870, in run
+    return next(resp)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/agent/agent.py", line 592, in _run
+    model_response = self.model.response(messages=run_messages.messages)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/base.py", line 163, in response
+    assistant_message, has_tool_calls = self._process_model_response(
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/base.py", line 291, in _process_model_response
+    provider_response: ModelResponse = self.parse_provider_response(response)
+  File "/Users/keltoumboukra/miniconda3/envs/twindoc/lib/python3.10/site-packages/agno/models/google/gemini.py", line 620, in parse_provider_response
+    if response_message.role is not None:
+AttributeError: 'NoneType' object has no attribute 'role'

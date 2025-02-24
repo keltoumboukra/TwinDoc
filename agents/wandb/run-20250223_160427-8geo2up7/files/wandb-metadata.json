@@ -1,0 +1,35 @@
+{
+  "os": "macOS-10.16-x86_64-i386-64bit",
+  "python": "CPython 3.10.16",
+  "startedAt": "2025-02-24T00:04:28.237893Z",
+  "program": "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents/medical_query.py",
+  "codePath": "agents/medical_query.py",
+  "git": {
+    "remote": "https://github.com/keltoumboukra/TwinDoc",
+    "commit": "cdfb2476410b01b0f0eaff342a021c1c594f69d9"
+  },
+  "email": "keltoum.boukra96@gmail.com",
+  "root": "/Users/keltoumboukra/Documents/AI Agent Hackathon/TwinDoc/agents",
+  "host": "Keltoums-Air.attlocal.net",
+  "executable": "/Users/keltoumboukra/miniconda3/envs/twindoc/bin/python",
+  "codePathLocal": "medical_query.py",
+  "cpu_count": 2,
+  "cpu_count_logical": 4,
+  "disk": {
+    "/": {
+      "total": "121123069952",
+      "used": "15324409856"
+    },
+    "/System/Volumes/Data": {
+      "total": "121123069952",
+      "used": "54063357952"
+    }
+  },
+  "memory": {
+    "total": "8589934592"
+  },
+  "cpu": {
+    "count": 2,
+    "countLogical": 4
+  }
+}
