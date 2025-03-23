@@ -27,8 +27,8 @@ TwinDoc is an innovative platform that creates digital twins for medical practit
 ## Prerequisites
 
 - Python 3.8 or higher
-- An OpenAI API key
-- Gemini API access (if applicable)
+- Google API key for Gemini access (primary)
+- OpenAI API key (optional fallback)
 - Weights & Biases account for logging
 
 ## Installation
@@ -52,7 +52,7 @@ source .venv/bin/activate  # For Linux/MacOS
 3. Install required packages:
 
 ```bash
-pip install -U google-genai lancedb agno tantivy sqlalchemy wandb weave
+pip install -U google-genai lancedb agno tantivy sqlalchemy wandb weave tenacity python-dotenv
 ```
 
 4. Set up your environment variables:
@@ -96,21 +96,48 @@ echo $GOOGLE_API_KEY
 
 ## Usage
 
-1. Import and use the medical query function:
+1. Run test queries to verify setup:
 
-```python
-from medical_query import query_medical_thinking
-
-# Ask a medical question
-response = query_medical_thinking(
-    question="What are the key differentials for acute chest pain?",
-    project_name="my-medical-project"  # Optional: defaults to "my-medical-project"
-)
-
-print(response)
+```bash
+python -m agents.test_queries
 ```
 
-2. Monitor your queries and responses in the Weights & Biases dashboard at `https://wandb.ai/your-username/my-medical-project`
+2. Use the orchestrator in your code:
+
+```python
+from agents.orchestrator import AgentOrchestrator
+
+# Initialize the orchestrator
+orchestrator = AgentOrchestrator()
+
+# Process a medical query
+result = orchestrator.process_query(
+    "What's your approach to diagnosing acute chest pain?"
+)
+
+# Access different components of the response
+print("Transcript Context:", result["transcript_context"])
+print("Thinking Process:", result["thinking_process"])
+print("Final Response:", result["final_response"])
+```
+
+## System Architecture
+
+TwinDoc uses a multi-agent architecture:
+- **Orchestrator**: Coordinates between different specialized agents
+- **TranscriptAgent**: Handles medical transcript retrieval and context
+- **ThinkingAgent**: Processes medical reasoning with DuckDuckGo integration
+- **RezaAgent**: Formulates final responses based on all inputs
+
+Each agent uses the Gemini API by default, with fallback to OpenAI if configured.
+
+## Error Handling
+
+The system includes robust error handling:
+- Automatic retries for API rate limits
+- Graceful degradation for service interruptions
+- Comprehensive error reporting
+- DuckDuckGo rate limit management
 
 ## Logging and Monitoring
 
@@ -177,3 +204,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Made with ❤️ for the global medical community
+
+## Recent Updates
+
+- Added multi-agent orchestration system
+- Implemented Gemini API integration
+- Added robust error handling and retries
+- Improved response processing and formatting
+- Added test query functionality
+- Enhanced documentation and usage examples

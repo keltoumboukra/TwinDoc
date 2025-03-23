@@ -4,13 +4,18 @@ from pathlib import Path
 from agno.agent import Agent
 from agno.knowledge.text import TextKnowledgeBase
 from agno.vectordb.lancedb import LanceDb, SearchType
-from config import get_model, get_embedder
+from .config import get_model, get_embedder
 
 reza_knowledge_folder = (
     Path(__file__).parent.parent.resolve().joinpath("knowledge").joinpath("reza")
 )
 
 class TranscriptAgent(Agent):
+    def __init__(self, *args, **kwargs):
+        if 'model' not in kwargs:
+            kwargs['model'] = get_model("mini")  # Ensure model is set from our config
+        super().__init__(*args, **kwargs)
+
     @weave.op()
     def print_response(self, prompt: str, **kwargs):
         return super().print_response(prompt, **kwargs)
@@ -26,8 +31,9 @@ reza_knowledge = TextKnowledgeBase(
     ),
 )
 
+# Create the transcript agent instance
 agent = TranscriptAgent(
-    model=get_model("mini"),
+    name="transcript_agent",
     description=dedent("""\
     You are a specialized agent that has access to Dr. Reza's transcripts and can provide
     accurate information about his views, opinions, and approaches based on these records."""),

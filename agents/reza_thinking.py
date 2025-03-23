@@ -2,12 +2,13 @@ import weave
 from textwrap import dedent
 from pathlib import Path
 from datetime import datetime
+from tenacity import retry, stop_after_attempt, wait_exponential
 
 from agno.agent import Agent
 from agno.tools.duckduckgo import DuckDuckGoTools
 from agno.knowledge.text import TextKnowledgeBase
 from agno.vectordb.lancedb import LanceDb, SearchType
-from config import get_model, get_embedder
+from .config import get_model, get_embedder
 
 
 reza_knowledge_folder = (
@@ -28,13 +29,24 @@ reza_knowledge = TextKnowledgeBase(
 )
 
 class ThinkingAgent(Agent):
+    def __init__(self, *args, **kwargs):
+        if 'model' not in kwargs:
+            kwargs['model'] = get_model()
+        super().__init__(*args, **kwargs)
+
+    @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=4, max=10))
     @weave.op()
     def print_response(self, prompt: str, **kwargs):
-        return super().print_response(prompt, **kwargs)
+        try:
+            return super().print_response(prompt, **kwargs)
+        except Exception as e:
+            if "Ratelimit" in str(e):
+                print("DuckDuckGo rate limit hit, retrying...")
+                raise  # This will trigger the retry
+            return f"Error in response generation: {str(e)}"
 
 reza_thinking_agent = ThinkingAgent(
     name="reza_thinking_agent",
-    model=get_model(),
     description=dedent("""\
     You are Digital Dr. Reza, a virtual representation of the real Dr. Reza. You have access to Dr. Reza's knowledge and
     thinking process in a carefully curated knowledge base. You communicate in a professional, academic manner

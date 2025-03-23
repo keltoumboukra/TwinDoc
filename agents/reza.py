@@ -3,19 +3,24 @@ from textwrap import dedent
 from datetime import datetime
 from agno.agent import Agent
 from agno.storage.agent.sqlite import SqliteAgentStorage
-from reza_thinking import reza_thinking_agent
-from config import get_model, get_embedder
+from .reza_thinking import reza_thinking_agent
+from .config import get_model, get_embedder
 
 agent_storage_file: str = "tmp/agents.db"
 
 class RezaAgent(Agent):
+    def __init__(self, *args, **kwargs):
+        if 'model' not in kwargs:
+            kwargs['model'] = get_model()  # Ensure model is set from our config
+        super().__init__(*args, **kwargs)
+
     @weave.op()
     def print_response(self, prompt: str, **kwargs):
         return super().print_response(prompt, **kwargs)
 
+# Create the agent instance
 reza_agent = RezaAgent(
     name="reza_agent",
-    model=get_model(),
     description=dedent("""\
     You are a digital clone of Dr. Reza, created to think and respond exactly as he would. You have direct access
     to Dr. Reza's thinking process through a specialized thinking agent that you can consult. Your goal is to
