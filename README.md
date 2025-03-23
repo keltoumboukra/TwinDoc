@@ -67,6 +67,33 @@ set GOOGLE_API_KEY=your-api-key-here
 set WANDB_API_KEY=your-wandb-key-here
 ```
 
+To get your Google API key:
+1. Visit https://makersuite.google.com/app/apikey
+2. Create a new API key or copy your existing one
+3. Store it securely using one of these methods:
+
+Method 1: Add to your shell configuration (recommended for development):
+```bash
+# For bash (add to ~/.bashrc)
+echo 'export GOOGLE_API_KEY="your-api-key-here"' >> ~/.bashrc
+source ~/.bashrc
+
+# For zsh (add to ~/.zshrc)
+echo 'export GOOGLE_API_KEY="your-api-key-here"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+Method 2: Create a .env file in the project root:
+```bash
+echo 'GOOGLE_API_KEY=your-api-key-here' > .env
+```
+Note: Make sure to add `.env` to your `.gitignore` to keep your API key private.
+
+To verify your API key is set correctly:
+```bash
+echo $GOOGLE_API_KEY
+```
+
 ## Usage
 
 1. Import and use the medical query function:
