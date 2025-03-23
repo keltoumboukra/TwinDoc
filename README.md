@@ -96,6 +96,29 @@ echo $GOOGLE_API_KEY
 
 ## Usage
 
+### Web Interface (New!)
+
+Launch the interactive web interface:
+
+```bash
+# Install Streamlit
+pip install streamlit
+
+# Run the frontend application
+streamlit run frontend/app.py
+```
+
+This will open a browser window with the TwinDoc Medical Assistant where you can:
+- Enter medical queries in an interactive interface
+- Get real-time responses from the AI agents
+- View detailed breakdowns of:
+  - Transcript Context
+  - Thinking Process
+  - Final Response
+- Access your conversation history
+
+### Python API
+
 1. Run test queries to verify setup:
 
 ```bash
